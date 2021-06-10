@@ -66,6 +66,9 @@ extern bool kFSI;
 extern bool kMSele;
 extern bool kMS;
 
+extern double fLambda_Mass;                                                                                                                                                      
+extern double fLambda_Mass_GeV;                                                                                                                                                  
+
 extern double fOmega_Mass; 
 extern double fOmega_Mass_GeV; 
 

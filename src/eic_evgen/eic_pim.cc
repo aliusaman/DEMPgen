@@ -65,6 +65,11 @@ double fVertex_X, fVertex_Y, fVertex_Z, fProton_Kin_Col_GeV, fElectron_Mass, fEl
 
 double fOmega_Mass, fOmega_Mass_GeV; 
 
+double f_Scat_hadron_Mass, f_Scat_hadron_Mass_GeV;
+
+double fKaon_Mass, fKaon_Mass_GeV, fLambda_Mass, fLambda_Mass_GeV, fSigma_Mass, fSigma_Mass_GeV;
+
+
 double fElectron_Energy_Col, fElectron_MomZ_Col, fElectron_MomX_Col, fElectron_MomY_Col, fElectron_Theta_Col, fElectron_Phi_Col, fElectron_Mom_Col;
 
 double fElectron_MS_Energy_Col, fElectron_MS_MomZ_Col, fElectron_MS_MomX_Col, fElectron_MS_MomY_Col, fElectron_MS_Theta_Col, fElectron_MS_Phi_Col, fElectron_MS_Mom_Col;
@@ -267,6 +272,13 @@ void pim::Initilize() {
     fRecoilProton_Mass_GeV                      = fRecoilProton_Mass/1000.0;
     fPion_Mass                                  = 139.57018;
     fPion_Mass_GeV                              = fPion_Mass/1000.0;
+
+    fKaon_Mass                                  = 493.677;
+    fKaon_Mass_GeV                              = fKaon_Mass/1000.0;
+    fLambda_Mass                                = 1115.683;
+    fLambda_Mass_GeV                            = fLambda_Mass/1000.0;
+    fSigma_Mass                                 = 1192.642;
+    fSigma_Mass_GeV                             = fSigma_Mass/1000.0;
 
     fOmega_Mass                                 = 782.65;
     fOmega_Mass_GeV                             = fOmega_Mass/1000.0;
@@ -868,6 +880,8 @@ void pim::Initilize() {
 
 
 
+	f_Scat_hadron_Mass                          = 0;
+        f_Scat_hadron_Mass_GeV                      = 0;
 
     fPhi_TargPol_LeptonPlane_RF                 = 0;
     fCos_Phi_TargPol_LeptonPlane_RF             = 0;

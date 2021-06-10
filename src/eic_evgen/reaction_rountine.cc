@@ -87,8 +87,14 @@ void Reaction::process_reaction() {
 		delete rr1;	
 //		exit(0);
 
+	} else if (rParticle == "K+") {                                                                                                                                        
+                                                                                                                                                                               
+//              cout << "here? " << endl;                                                                                                                            
+                                                                                                                                                                               
+	        KLambda_Production* rr1 = new KLambda_Production(rParticle);                                                                                                   
+       	        rr1->process_reaction();                                                                                                                                       
+	        delete rr1;                                 
 	}
-
 
 // // 
 // // 	Init();
